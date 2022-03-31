@@ -33,7 +33,13 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val tinggiCm = tinggi.toFloat() / 100
+        val umur = binding.umurInp.text.toString()
+
+        if (TextUtils.isEmpty(umur)) {
+            Toast.makeText(this, R.string.umur_invalid, Toast.LENGTH_LONG).show()
+            return
+        }
+
         val selectedIdJK = binding.radioGroup.checkedRadioButtonId
 
         if (selectedIdJK == -1) {
@@ -52,13 +58,32 @@ class MainActivity : AppCompatActivity() {
         val aktivitasRingan = selectedIdFA == R.id.aktivitasRingan
         val aktivitasSedang = selectedIdFA == R.id.aktivitasSedang
         val aktivitasBerat = selectedIdFA == R.id.aktivitasBerat
-        val stringRes = if (isMale) {
-            val bmr = (10 * berat.toFloat()) + (6.5 * tinggiCm) - ()+ 5
-        } else {
-            val bmr = berat.toFloat() / (tinggiCm * tinggiCm)
-        }
 
-        binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, bmr)
+        if (isMale) {
+            val bmr = (10 * berat.toFloat()) + (6.5 * tinggi.toFloat()) - (5 * umur.toFloat()) + 5
+            if (aktivitasRingan) {
+                val final_bmr = 1.6 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }else if (aktivitasSedang){
+                val final_bmr = 1.7 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }else if (aktivitasBerat){
+                val final_bmr = 1.8 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }
+        } else {
+            val bmr = (10 * berat.toFloat()) + (6.5 * tinggi.toFloat()) - (5 * umur.toFloat()) - 161
+            if (aktivitasRingan) {
+                val final_bmr = 1.5 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }else if (aktivitasSedang){
+                val final_bmr = 1.6 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }else if (aktivitasBerat){
+                val final_bmr = 1.8 * bmr
+                binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, final_bmr)
+            }
+        }
     }
 
 
