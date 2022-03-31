@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Kalkulator BMR</string>
+    <string name="bmr_description">Basal metabolic rate (BMR) adalah kalori yang tubuh Anda perlukan untuk melakukan aktivitas dasar tubuh. Ayo hitung BMR Anda sekarang dengan versi Mifflin St. Jeor!</string>
+    <string name="berat_badan">Berat badan (kg)</string>
+    <string name="tinggi_badan">Tinggi badan (cm)</string>
+    <string name="jenis_kelamin">Jenis kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="faktor_aktivitas">Aktivitas fisik</string>
+    <string name="aktivitas_ringan">Ringan</string>
+    <string name="aktivitas_sedang">Sedang</string>
+    <string name="aktivitas_berat">Berat</string>
+    <string name="hitung">Hitung</string>
+    <string name="bmr_info">Kebutuhan energi Anda dalam sehari adalah</string>
+    <string name="hasil_bmr">%1$.2f kkal</string>
 </resources>
