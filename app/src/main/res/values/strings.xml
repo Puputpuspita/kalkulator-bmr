@@ -3,6 +3,7 @@
     <string name="bmr_description">Basal metabolic rate (BMR) adalah kalori yang tubuh Anda perlukan untuk melakukan aktivitas dasar tubuh. Ayo hitung BMR Anda sekarang dengan versi Mifflin St. Jeor!</string>
     <string name="berat_badan">Berat badan (kg)</string>
     <string name="tinggi_badan">Tinggi badan (cm)</string>
+    <string name="umur">Umur</string>
     <string name="jenis_kelamin">Jenis kelamin</string>
     <string name="pria">Pria</string>
     <string name="wanita">Wanita</string>
@@ -13,4 +14,9 @@
     <string name="hitung">Hitung</string>
     <string name="bmr_info">Kebutuhan energi Anda dalam sehari adalah</string>
     <string name="hasil_bmr">%1$.2f kkal</string>
+    <string name="berat_invalid">Berat tidak boleh kosong.</string>
+    <string name="tinggi_invalid">Tinggi tidak boleh kosong.</string>
+    <string name="gender_invalid">Pilih jenis kelamin.</string>
+    <string name="activity_invalid">Pilih jenis Aktivitas Fisik.</string>
+    <string name="reset">Reset</string>
 </resources>
