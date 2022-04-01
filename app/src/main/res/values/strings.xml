@@ -12,8 +12,8 @@
     <string name="aktivitas_sedang">Sedang</string>
     <string name="aktivitas_berat">Berat</string>
     <string name="hitung">Hitung</string>
-    <string name="bmr_info">Kebutuhan energi Anda dalam sehari adalah</string>
-    <string name="hasil_bmr">%1$.0f kkal</string>
+    <string name="hasil_tdee">Total Daily Energy Expenditure: %1$.2f kkal/hari</string>
+    <string name="hasil_bmr">BMR: %1$.2f kkal</string>
     <string name="berat_invalid">Berat tidak boleh kosong.</string>
     <string name="tinggi_invalid">Tinggi tidak boleh kosong.</string>
     <string name="umur_invalid">Umur tidak boleh kosong.</string>

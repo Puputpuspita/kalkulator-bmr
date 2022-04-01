@@ -74,6 +74,26 @@
                 android:hint="@string/umur" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FA_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/umur_hint"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/material_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="@string/faktor_aktivitas"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <TextView
             android:id="@+id/textViewJK"
             android:layout_width="wrap_content"
@@ -94,7 +114,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/textViewJK"
-            app:layout_constraintTop_toBottomOf="@id/umur_hint">
+            app:layout_constraintTop_toBottomOf="@id/FA_hint">
 
             <RadioButton
                 android:id="@+id/priaRadioButton"
@@ -112,57 +132,14 @@
 
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/textViewFA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/faktor_aktivitas"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/radioGroup2" />
-
-        <RadioGroup
-            android:id="@+id/radioGroup2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/textViewFA"
-            app:layout_constraintTop_toBottomOf="@id/radioGroup">
-
-            <RadioButton
-                android:id="@+id/aktivitasRingan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/aktivitas_ringan" />
-
-            <RadioButton
-                android:id="@+id/aktivitasSedang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/aktivitas_sedang" />
-
-            <RadioButton
-                android:id="@+id/aktivitasBerat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/aktivitas_berat" />
-        </RadioGroup>
-
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/hitung"
-            app:layout_constraintStart_toStartOf="@+id/radioGroup2"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
         <View
             android:id="@+id/divider"
@@ -177,28 +154,32 @@
             app:layout_constraintTop_toBottomOf="@+id/button" />
 
         <TextView
-            android:id="@+id/bmrInfoTextView"
+            android:id="@+id/hasilBmrTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="32dp"
             android:textSize="18sp"
-            android:text="@string/bmr_info"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider" />
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="BMR: 1542.5 kkal/hari" />
 
         <TextView
-            android:id="@+id/hasilBmrTextView"
+            android:id="@+id/hasiltdeeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bmrInfoTextView"
-            tools:text="2.472 kkal" />
+            app:layout_constraintTop_toBottomOf="@+id/hasilBmrTextView"
+            tools:text="Total Daily Energy Expenditure: 2120 kkal/hari" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
