@@ -18,13 +18,18 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.button.setOnClickListener { hitungBmr() }
-        binding.resetButton.setOnClickListener { reset() }
 
         val items = listOf("sedikit beraktivitas, tidak berolahraga", "olahraga ringan 1 – 3 kali dalam seminggu", "olahraga ringan 6 - 7 kali dalam seminggu", "olahraga berat 1 atau 2 kali dalam sehari", "olahraga berat 2 kali atau lebih dalam sehari")
         val adapter = ArrayAdapter(this@MainActivity, R.layout.list_item, items)
         val material_spinner = binding.materialSpinner
         material_spinner.setAdapter(adapter)
+
+        binding.resetButton.setOnClickListener {
+            reset()
+            material_spinner.setAdapter(adapter)
+        }
 
         binding.card.visibility = View.INVISIBLE
         binding.card2.visibility = View.INVISIBLE
