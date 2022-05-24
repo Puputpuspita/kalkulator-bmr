@@ -6,11 +6,17 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import org.d3if2132.kalkulatorbmr.databinding.ActivityMainBinding
+import org.d3if2132.kalkulatorbmr.model.HasilBmr
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private val viewModel: MainViewModel by lazy {
+        ViewModelProvider(this)[MainViewModel::class.java]
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener { hitungBmr() }
+        viewModel.getHasilBmr().observe(this, { showResult(it) })
 
         val items = listOf("sedikit beraktivitas, tidak berolahraga", "olahraga ringan 1 – 3 kali dalam seminggu", "olahraga ringan 6 - 7 kali dalam seminggu", "olahraga berat 1 atau 2 kali dalam sehari", "olahraga berat 2 kali atau lebih dalam sehari")
         val adapter = ArrayAdapter(this@MainActivity, R.layout.list_item, items)
@@ -71,67 +78,18 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val isMale = selectedIdJK == R.id.priaRadioButton
-        val sedentary = selectedFA == "sedikit beraktivitas, tidak berolahraga"
-        val lighlyActive = selectedFA == "olahraga ringan 1 – 3 kali dalam seminggu"
-        val moderatelyActive = selectedFA == "olahraga ringan 6 - 7 kali dalam seminggu"
-        val veryActive = selectedFA == "olahraga berat 1 atau 2 kali dalam sehari"
-        val extremeActive = selectedFA == "olahraga berat 2 kali atau lebih dalam sehari"
+        viewModel.hitungBmr(
+            berat.toFloat(),
+            tinggi.toFloat(),
+            umur.toFloat(),
+            selectedIdJK == R.id.priaRadioButton,
+            selectedFA == "sedikit beraktivitas, tidak berolahraga",
+            selectedFA == "olahraga ringan 1 – 3 kali dalam seminggu",
+            selectedFA == "olahraga ringan 6 - 7 kali dalam seminggu",
+            selectedFA == "olahraga berat 1 atau 2 kali dalam sehari",
+            selectedFA == "olahraga berat 2 kali atau lebih dalam sehari"
+        )
 
-
-        if (isMale) {
-            val bmr = (10 * berat.toFloat()) + (6.25 * tinggi.toFloat()) - (5 * umur.toFloat()) + 5
-            binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, bmr)
-
-            when {
-                sedentary -> {
-                    val tdee = 1.2 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                lighlyActive -> {
-                    val tdee = 1.375 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                moderatelyActive -> {
-                    val tdee = 1.55 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                veryActive -> {
-                    val tdee = 1.725 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                extremeActive -> {
-                    val tdee = 1.9 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-            }
-        } else {
-            val bmr = (10 * berat.toFloat()) + (6.25 * tinggi.toFloat()) - (5 * umur.toFloat()) - 161
-            binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, bmr)
-
-            when {
-                sedentary -> {
-                    val tdee = 1.2 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                lighlyActive -> {
-                    val tdee = 1.375 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                moderatelyActive -> {
-                    val tdee = 1.55 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                veryActive -> {
-                    val tdee = 1.725 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-                extremeActive -> {
-                    val tdee = 1.9 * bmr
-                    binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee, tdee)
-                }
-            }
-        }
         binding.resetButton.visibility = View.VISIBLE
         binding.card.visibility = View.VISIBLE
         binding.card2.visibility = View.VISIBLE
@@ -149,5 +107,11 @@ class MainActivity : AppCompatActivity() {
         binding.card2.visibility = View.INVISIBLE
     }
 
+    private fun showResult(result: HasilBmr?){
+        if (result == null) return
+
+        binding.hasilBmrTextView.text = getString(R.string.hasil_bmr, result.bmr)
+        binding.hasiltdeeTextView.text = getString(R.string.hasil_tdee,result.tdee)
+    }
 
 }
