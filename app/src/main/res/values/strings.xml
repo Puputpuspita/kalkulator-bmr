@@ -206,7 +206,7 @@
     <string name="berat_minyak_kelapa">5</string>
 
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
-    <string name="detail_app">Aplikasi ini merupakan kalkulator untuk menghitung BMR dan TDEE.\n\nBasal Metabolic Rate (BMR) merupakan angka yang menunjukan berapa banyak energi yang digunakan manusia dalam keadaan istirahat sepenuhnya. Terdapat banyak rumus untuk menghitung BMR, salah satunya yakni formula milik Mifflin St. Jeor.\n\notal Daily Energy Expenditure (TDEE) merupakan angka yang menunjukan berapa banyak energi yang dibutuhkan oleh tubuh dengan kondisi beraktivitas maupun berolahraga. Untuk menghitung nilai TDEE, nilai BMR dikalikan dengan tingkat aktivitas.</string>
+    <string name="detail_app">Aplikasi ini merupakan kalkulator untuk menghitung BMR dan TDEE.\n\nBasal Metabolic Rate (BMR) merupakan angka yang menunjukan berapa banyak energi yang digunakan manusia dalam keadaan istirahat sepenuhnya. Terdapat banyak rumus untuk menghitung BMR, salah satunya yakni formula milik Mifflin St. Jeor.\n\nTotal Daily Energy Expenditure (TDEE) merupakan angka yang menunjukan berapa banyak energi yang dibutuhkan oleh tubuh dengan kondisi beraktivitas maupun berolahraga. Untuk menghitung nilai TDEE, nilai BMR dikalikan dengan tingkat aktivitas.</string>
     <string name="bagikan_text">Berat badan: %1$s kg\nTinggi badan: %2$scm\nUmur : %3$s\nAktifitas Fisik: %4$s\nJenis kelamin: %5$s\n\n%6$s\n%7$s</string>
     <string name="data_kosong">Data masih kosong</string>
     <string name="histori">Histori</string>
