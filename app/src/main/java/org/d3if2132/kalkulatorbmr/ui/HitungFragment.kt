@@ -1,5 +1,6 @@
 package org.d3if2132.kalkulatorbmr.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
@@ -47,6 +48,7 @@ class HitungFragment : Fragment() {
             )
         }
 
+        binding.bagikanButton.setOnClickListener { shareData() }
 
         viewModel.getHasilBmr().observe(requireActivity(), { showResult(it) })
     }
@@ -152,6 +154,7 @@ class HitungFragment : Fragment() {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.options_menu, menu)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.menu_about) {
             findNavController().navigate(
@@ -159,6 +162,30 @@ class HitungFragment : Fragment() {
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun shareData() {
+        val selectedIdJK = binding.radioGroup.checkedRadioButtonId
+        val gender = if (selectedIdJK == R.id.priaRadioButton)
+            getString(R.string.pria)
+        else
+            getString(R.string.wanita)
+        val aktivitasFisik =  binding.materialSpinner.text.toString()
+        val message = getString(R.string.bagikan_text,
+            binding.beratBadanInp.text,
+            binding.tinggiBadanInp.text,
+            binding.umurInp.text,
+            aktivitasFisik,
+            gender,
+            binding.hasilBmrTextView.text,
+            binding.hasiltdeeTextView.text
+        )
+        val shareIntent = Intent(Intent.ACTION_SEND)
+        shareIntent.setType("text/plain").putExtra(Intent.EXTRA_TEXT, message)
+        if (shareIntent.resolveActivity(
+                requireActivity().packageManager) != null) {
+            startActivity(shareIntent)
+        }
     }
 
 }
