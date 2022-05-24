@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/hitungFragment"
-        android:name="org.d3if2132.kalkulatorbmr.ui.HitungFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.hitung.HitungFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_hitung" >
         <action
@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_hitungFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_historiFragment"
+            app:destination="@id/historiFragment" />
     </fragment>
     <fragment
         android:id="@+id/makananFragment"
@@ -27,4 +30,9 @@
         android:name="org.d3if2132.kalkulatorbmr.ui.AboutFragment"
         android:label="@string/tentang_aplikasi"
         tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/historiFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.histori.HistoriFragment"
+        android:label="@string/histori"
+        tools:layout="@layout/fragment_histori"/>
 </navigation>

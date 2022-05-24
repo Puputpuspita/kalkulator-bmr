@@ -1,8 +1,9 @@
-package org.d3if2132.kalkulatorbmr.ui
+package org.d3if2132.kalkulatorbmr.ui.hitung
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -12,14 +13,18 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import org.d3if2132.kalkulatorbmr.R
 import org.d3if2132.kalkulatorbmr.databinding.FragmentHitungBinding
+import org.d3if2132.kalkulatorbmr.db.BmrDb
 import org.d3if2132.kalkulatorbmr.model.HasilBmr
 
 class HitungFragment : Fragment() {
 
     private lateinit var binding: FragmentHitungBinding
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(requireActivity())[MainViewModel::class.java]
+    private val viewModel: HitungViewModel by lazy {
+        val db = BmrDb.getInstance(requireContext())
+        val factory = HitungViewModelFactory(db.dao)
+
+        ViewModelProvider(this, factory)[HitungViewModel::class.java]
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -51,6 +56,7 @@ class HitungFragment : Fragment() {
         binding.bagikanButton.setOnClickListener { shareData() }
 
         viewModel.getHasilBmr().observe(requireActivity(), { showResult(it) })
+
     }
 
     private fun hitungBmr() {
@@ -92,12 +98,8 @@ class HitungFragment : Fragment() {
             berat.toFloat(),
             tinggi.toFloat(),
             umur.toFloat(),
-            selectedIdJK == R.id.priaRadioButton,
-            selectedFA == "sedikit beraktivitas, tidak berolahraga",
-            selectedFA == "olahraga ringan 1 – 3 kali dalam seminggu",
-            selectedFA == "olahraga ringan 6 - 7 kali dalam seminggu",
-            selectedFA == "olahraga berat 1 atau 2 kali dalam sehari",
-            selectedFA == "olahraga berat 2 kali atau lebih dalam sehari"
+            selectedFA,
+            selectedIdJK == R.id.priaRadioButton
         )
     }
 
@@ -156,12 +158,18 @@ class HitungFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_about) {
-            findNavController().navigate(
-                R.id.action_hitungFragment_to_aboutFragment)
-            return true
-        }
-        return super.onOptionsItemSelected(item)
+        when(item.itemId) {
+            R.id.menu_histori -> {
+                findNavController().navigate(R.id.action_hitungFragment_to_historiFragment)
+                return true
+            }
+
+            R.id.menu_about -> {
+                    findNavController().navigate(R.id.action_hitungFragment_to_aboutFragment)
+                    return true
+                }
+            }
+                return super.onOptionsItemSelected(item)
     }
 
     private fun shareData() {
@@ -187,5 +195,6 @@ class HitungFragment : Fragment() {
             startActivity(shareIntent)
         }
     }
+
 
 }
