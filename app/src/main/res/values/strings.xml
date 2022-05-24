@@ -216,5 +216,6 @@
     <string name="konfirmasi_hapus">Hapus semua histori?</string>
     <string name="batal">Batal</string>
     <string name="hapus_histori">Hapus Histori</string>
+    <string name="action_switch_layout">Ubah Layout</string>
 
 </resources>
