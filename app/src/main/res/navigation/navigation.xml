@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/hitungFragment">
+
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.HitungFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_hitung" >
+        <action
+            android:id="@+id/action_hitungFragment_to_makananFragment"
+            app:destination="@id/makananFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makananFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.MakananFragment"
+        android:label="@string/tabel_kalori"
+        tools:layout="@layout/fragment_makanan"/>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.AboutFragment"
+        android:label="@string/tentang_aplikasi"
+        tools:layout="@layout/fragment_about"/>
+</navigation>

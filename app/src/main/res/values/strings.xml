@@ -20,4 +20,191 @@
     <string name="gender_invalid">Pilih jenis kelamin.</string>
     <string name="activity_invalid">Pilih jenis Aktivitas Fisik.</string>
     <string name="reset">Reset</string>
+
+    <string name="tabel_kalori">Tabel Kalori</string>
+    <string name="judul_tabel_kalori">Tabel Kalori Makanan dan Minuman Anda Sehari-hari</string>
+    <string name="golongan_1">• Golongan I : Sumber Karbohidrat</string>
+    <string name="golongan_2">• Golongan II : Sumber Protein Hewani</string>
+    <string name="golongan_3">• Golongan III : Sumber Protein Nabati</string>
+    <string name="golongan_4">• Golongan IV: Sayuran</string>
+    <string name="golongan_5">• Golongan V : Buah dan Gula</string>
+    <string name="golongan_6">• Golongan VI : Susu</string>
+    <string name="golongan_7">• Golongan VII : Minyak</string>
+    <string name="golongan_8">• Golongan VIII : Makanan Tanpa Kalori</string>
+
+    <string name="golongan_1_title">Golongan I : Sumber Karbohidrat</string>
+    <string name="golongan_2_title">Golongan II : Sumber Protein Hewani</string>
+    <string name="golongan_3_title">Golongan III : Sumber Protein Nabati</string>
+    <string name="golongan_4_title">Golongan IV: Sayuran</string>
+    <string name="golongan_5_title">Golongan V : Buah dan Gula</string>
+    <string name="golongan_6_title">Golongan VI : Susu</string>
+    <string name="golongan_7_title">Golongan VII : Minyak</string>
+    <string name="golongan_8_title">Golongan VIII : Makanan Tanpa Kalori</string>
+
+    <string name="lihat_selengkapnya">Lihat Selengkapnya</string>
+    <string name="bagikan">Bagikan</string>
+
+    <string name="bahan_makanan">Bahan Makanan</string>
+    <string name="Satuan">Satuan</string>
+    <string name="Berat">Berat (g)</string>
+    <string name="desc_golongan_1">1 Satuan penukar = 175 kalori / 4 gram protein / 40 gram karbohidrat</string>
+    <string name="rendah_lemak">Rendah lemak</string>
+    <string name="desc_golongan_2_rendah_lemak">1 Satuan penukar = 50 kalori / 7 gram protein / 2 gram lemak</string>
+    <string name="lemak_sedang">Lemak sedang</string>
+    <string name="desc_golongan_2_lemak_sedang">1 Satuan penukar = 75 kalori / 7 gram protein / 5 gram lemak</string>
+    <string name="tinggi_lemak">Tinggi lemak</string>
+    <string name="desc_golongan_2_tinggi_lemak">1 Satuan penukar = 150 kalori / 7 gram protein / 13 gram lemak</string>
+    <string name="desc_golongan_3">1 Satuan penukar = 75 kalori / 5 gram protein / 3 gram lemak / 7 gram karbohidrat</string>
+    <string name="sayuran_a">Sayuran A</string>
+    <string name="sayuran_b">Sayuran B</string>
+    <string name="sayuran_c">Sayuran C</string>
+    <string name="desc_golongan_3_sayuran_A">Sayuran A berarti jenis sayuran yang bebas dimakan, sebab kandungan kalori dapat diabaikan.\n Jenis sayuran yang tergolong kategori ini adalah: \n • Baligo Gambas (oyong) \n • Jamur kuping segar \n • Ketimun \n • Selada \n • Lobak \n • Labu air \n • Lettuce \n • Slada air \n • Tomat</string>
+    <string name="desc_golongan_3_sayuran_B">1 Satuan Penukar +/- 1 gelas (100gram) = 25 kalori / 1 gram protein / 5 gram karbohidrat.\n Contoh jenis sayuran dalam kategori B adalah: \n • Bayam \n • Bit \n • Buncis \n • Brokoli \n • Caisim \n • Genjer \n • Jagung muda \n • Kol \n • Kembang kol \n • Wortel \n • Daun pakis \n • Daun waluh \n • Jantung pisang \n • Kucai \n • Labu waluh \n • Labu siam \n • Sawi \n • Toge kacang hijau \n • Terong \n • Kangkung \n • Kacang panjang \n • Labu siam \n • Pare \n • Rebung \n • Pepaya muda \n • Kecipir \n • Kol</string>
+    <string name="desc_golongan_3_sayuran_C">1 Satuan Penukar +/- 1 gelas (100gram) = 50 kalori / 3 gram protein / 10 gram karbohidrat.\n Contoh jenis sayuran dalam kategori C adalah: \n •  Bayam merah \n • Daun tales \n • Daun singkong \n • Daun katuk \n • Kacang kapri \n • Nangka muda \n • Daun melinjo \n • Kluwih \n • Melinjo \n • Daun papaya \n • Toge kacang kedelai</string>
+    <string name="desc_golongan_4">1 Satuan penukar = 50 kalori / 12 gram karbohidrat</string>
+    <string name="susu_tanpa_lemak">Susu tanpa lemak</string>
+    <string name="susu_rendah_lemak">Susu rendah lemak</string>
+    <string name="susu_tinggi_lemak">Susu tinggi lemak</string>
+    <string name="desc_golongan_4_susu_tanpa_lemak">1 Satuan penukar = 75 kalori / 7 gram protein / 10 gram karbohidrat</string>
+    <string name="desc_golongan_4_susu_rendah_lemak">1 Satuan penukar = 125 kalori / 7 gram protein / 6 gram lemak / 10 gram karbohidrat</string>
+    <string name="desc_golongan_4_susu_tinggi_lemak">1 Satuan Penukar = 150 kalori / 7 gram protein / 10 gram lemak / 10 gram karbohidrat</string>
+    <string name="desc_golongan_5">1 Satuan penukar = 50 kalori / 5 gram lemak</string>
+    <string name="lemak_tidak_jenuh">Lemak tidak jenuh</string>
+    <string name="lemak_jenuh">Lemak jenuh</string>
+    <string name="desc_golongan_7">1 Satuan penukar = 50 kalori / 5 gram lemak</string>
+    <string name="desc_golongan_8">\n • Agar-agar \n • Air kaldu \n • Air mineral \n • Cuka \n • Gelatin \n • Gula alternatif, seperti aspartam dan sakarin \n • Teh \n • Kopi \n • Kecap</string>
+
+    <string name="kentang">Kentang</string>
+    <string name="satuan_kentang">2 biji sedang</string>
+    <string name="berat_kentang">210</string>
+    <string name="nasi">Nasi</string>
+    <string name="satuan_nasi">¾ gelas</string>
+    <string name="berat_nasi">100</string>
+    <string name="ubi">Ubi</string>
+    <string name="satuan_ubi">1 biji</string>
+    <string name="berat_ubi">135</string>
+    <string name="roti_putih">Roti putih</string>
+    <string name="satuan_roti">3 potong sedang</string>
+    <string name="berat_roti">70</string>
+
+    <string name="ayam_tanpa_kulit">Ayam tanpa kulit</string>
+    <string name="satuan_ayam_tanpa_kulit">1 potong sedang</string>
+    <string name="berat_ayam_tanpa_kulit">40</string>
+    <string name="daging_kerbau">Daging kerbau</string>
+    <string name="satuan_daging_kerbau">1 potong sedang</string>
+    <string name="berat_daging_kerbau">35</string>
+    <string name="ikan_sedang">Ikan segar</string>
+    <string name="satuan_ikan_sedang">1 potong sedang</string>
+    <string name="berat_ikan_sedang">40</string>
+    <string name="udang_segar">Udang segar</string>
+    <string name="satuan_udang_segar">5 ekor sedang</string>
+    <string name="berat_udang_segar">35</string>
+
+    <string name="daging_kambing">Daging kambing</string>
+    <string name="satuan_daging_kambing">1 potong sedang</string>
+    <string name="berat_daging_kambing">40</string>
+    <string name="daging_sapi">Daging sapi</string>
+    <string name="satuan_daging_sapi">1 potong sedang</string>
+    <string name="berat_daging_sapi">35</string>
+    <string name="hati_sapi">Hati sapi</string>
+    <string name="satuan_hati_sapi">1 potong sedang</string>
+    <string name="berat_hati_sapi">35</string>
+    <string name="telur_ayam">Telur ayam</string>
+    <string name="satuan_telur_ayam">1 butir</string>
+    <string name="berat_telur_ayam">50</string>
+
+    <string name="ayam_dengan_kulit">Ayam dengan kulit</string>
+    <string name="satuan_ayam_dengan_kulit">1 potong sedang</string>
+    <string name="berat_ayam_dengan_kulit">40</string>
+    <string name="bebek">Bebek</string>
+    <string name="satuan_bebek">1 potong sedang</string>
+    <string name="berat_bebek">45</string>
+    <string name="sosis">Sosis</string>
+    <string name="satuan_sosis">½ potong</string>
+    <string name="berat_sosis">50</string>
+    <string name="daging_babi">Daging Babi</string>
+    <string name="satuan_daging_babi">daging_babi</string>
+    <string name="berat_daging_babi">50</string>
+
+    <string name="kacang_hijau">Kacang hijau</string>
+    <string name="satuan_kacang_hijau">2 sdm</string>
+    <string name="berat_kacang_hijau">20</string>
+    <string name="kacang_tanah">Kacang tanah</string>
+    <string name="satuan_kacang_tanah">2 sdm</string>
+    <string name="berat_kacang_tanah">25</string>
+    <string name="tahu">Tahu</string>
+    <string name="satuan_tahu">1 biji besar</string>
+    <string name="berat_tahu">110</string>
+    <string name="tempe">Tempe</string>
+    <string name="satuan_tempe">2 potong sedang</string>
+    <string name="berat_tempe">50</string>
+
+    <string name="anggur">Anggur</string>
+    <string name="satuan_anggur">20 buah sedang</string>
+    <string name="berat_anggur">165</string>
+    <string name="apel_merah">Apel Merah</string>
+    <string name="satuan_apel_merah">1 buah</string>
+    <string name="berat_apel_merah">85</string>
+    <string name="mangga">Mangga</string>
+    <string name="satuan_mangga">¾ buah besar</string>
+    <string name="berat_mangga">90</string>
+    <string name="pisang">Pisang</string>
+    <string name="satuan_pisang">1 buah</string>
+    <string name="berat_pisang">50</string>
+
+    <string name="susu_skim_cair">Susu skim cair</string>
+    <string name="satuan_susu_skim_cair">1 gelas</string>
+    <string name="berat_susu_skim_cair">200</string>
+    <string name="tepung_susu_skim">Tepung susu skim</string>
+    <string name="satuan_tepung_susu_skim">4 sdm</string>
+    <string name="berat_tepung_susu_skim">20</string>
+    <string name="yoghur_non_fat">Yogurt Non fat</string>
+    <string name="satuan_yoghur_non_fat">2/3 gelas</string>
+    <string name="berat_yoghur_non_fat">120</string>
+
+    <string name="keju">Keju</string>
+    <string name="satuan_keju">keju</string>
+    <string name="berat_keju">35</string>
+    <string name="susu_kambing">Susu kambing</string>
+    <string name="satuan_susu_kambing">susu_sapi</string>
+    <string name="berat_susu_kambing">165</string>
+    <string name="susu_sapi">Susu sapi</string>
+    <string name="satuan_susu_sapi">1 gelas</string>
+    <string name="berat_susu_sapi">200</string>\
+    <string name="yogurt">Yogurt</string>
+    <string name="satuan_yogurt">1 gelas</string>
+    <string name="berat_yogurt">200</string>
+
+    <string name="susu_kerbau">Susu kerbau</string>
+    <string name="satuan_susu_kerbau">½ gelas</string>
+    <string name="berat_susu_kerbau">100</string>
+    <string name="tepung_susu_penuh">Tepung susu penuh</string>
+    <string name="satuan_tepung_susu_penuh">6 sdm</string>
+    <string name="berat_tepung_susu_penuh">30</string>
+
+    <string name="alpukat">Alpukat</string>
+    <string name="satuan_alpukat">½ buah besar</string>
+    <string name="berat_alpukat">60</string>
+    <string name="kacang_almond">Kacang almond</string>
+    <string name="satuan_kacang_almond">7 biji</string>
+    <string name="berat_kacang_almond">25</string>
+    <string name="minyak_zaitun">Minyak zaitun</string>
+    <string name="satuan_minyak_zaitun">¼ sdt</string>
+    <string name="berat_minyak_zaitun">5</string>
+
+    <string name="mentega">Mentega</string>
+    <string name="satuan_mentega">1 sdm</string>
+    <string name="berat_mentega">15</string>
+    <string name="santan">Santan</string>
+    <string name="satuan_santan">1/3 gelas</string>
+    <string name="berat_santan">40</string>
+    <string name="kelapa">Kelapa</string>
+    <string name="satuan_kelapa">1 potong kecil</string>
+    <string name="berat_kelapa">15</string>
+    <string name="minyak_kelapa">Minyak kelapa</string>
+    <string name="satuan_minyak_kelapa">½ sdt</string>
+    <string name="berat_minyak_kelapa">5</string>
+
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="detail_app">Aplikasi ini merupakan kalkulator untuk menghitung BMR dan TDEE.\n\nBasal Metabolic Rate (BMR) merupakan angka yang menunjukan berapa banyak energi yang digunakan manusia dalam keadaan istirahat sepenuhnya. Terdapat banyak rumus untuk menghitung BMR, salah satunya yakni formula milik Mifflin St. Jeor.\n\notal Daily Energy Expenditure (TDEE) merupakan angka yang menunjukan berapa banyak energi yang dibutuhkan oleh tubuh dengan kondisi beraktivitas maupun berolahraga. Untuk menghitung nilai TDEE, nilai BMR dikalikan dengan tingkat aktivitas.</string>
 </resources>
