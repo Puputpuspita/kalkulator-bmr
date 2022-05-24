@@ -1597,6 +1597,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/golongan_7_title"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider6" />
@@ -1898,6 +1899,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/golongan_8_title"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider7" />
