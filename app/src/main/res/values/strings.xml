@@ -212,5 +212,9 @@
     <string name="histori">Histori</string>
     <string name="hasil_x">BMR\t: %1$.2f \nTDEE\t: %2$.2f</string>
     <string name="data_x">Berat Badan\t: %1$.1f \nTinggi Badan\t: %2$.1f \nUmur\t\t: %3$.0f \nAktivitas Fisik\t: %4$s \nJenis Kelamin\t: %5$s</string>
+    <string name="hapus">Hapus</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="batal">Batal</string>
+    <string name="hapus_histori">Hapus Histori</string>
 
 </resources>
