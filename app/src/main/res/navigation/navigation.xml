@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_hitungFragment_to_historiFragment"
             app:destination="@id/historiFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_rekomendasiFragment"
+            app:destination="@id/rekomendasiFragment" />
     </fragment>
     <fragment
         android:id="@+id/makananFragment"
@@ -35,4 +38,8 @@
         android:name="org.d3if2132.kalkulatorbmr.ui.histori.HistoriFragment"
         android:label="@string/histori"
         tools:layout="@layout/fragment_histori"/>
+    <fragment
+        android:id="@+id/rekomendasiFragment"
+        android:name="org.d3if2132.kalkulatorbmr.ui.rekomendasi.RekomendasiFragment"
+        android:label="RekomendasiFragment" />
 </navigation>

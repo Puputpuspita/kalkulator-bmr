@@ -53,6 +53,12 @@ class HitungFragment : Fragment() {
             )
         }
 
+        binding.rendahKaloriButton.setOnClickListener {
+            it.findNavController().navigate(
+                R.id.action_hitungFragment_to_rekomendasiFragment
+            )
+        }
+
         binding.bagikanButton.setOnClickListener { shareData() }
 
         viewModel.getHasilBmr().observe(requireActivity(), { showResult(it) })
@@ -126,6 +132,10 @@ class HitungFragment : Fragment() {
         binding.textViewFoodCat7.visibility = View.INVISIBLE
         binding.textViewFoodCat8.visibility = View.INVISIBLE
         binding.tabelKaloriButton.visibility =  View.INVISIBLE
+
+        binding.divider3.visibility = View.INVISIBLE
+        binding.textViewFoodLowCalorieTitle.visibility = View.INVISIBLE
+        binding.rendahKaloriButton.visibility =  View.INVISIBLE
     }
 
     private fun showResult(result: HasilBmr?){
@@ -150,6 +160,10 @@ class HitungFragment : Fragment() {
         binding.textViewFoodCat7.visibility = View.VISIBLE
         binding.textViewFoodCat8.visibility = View.VISIBLE
         binding.tabelKaloriButton.visibility =  View.VISIBLE
+
+        binding.divider3.visibility = View.VISIBLE
+        binding.textViewFoodLowCalorieTitle.visibility = View.VISIBLE
+        binding.rendahKaloriButton.visibility =  View.VISIBLE
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

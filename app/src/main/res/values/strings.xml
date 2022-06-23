@@ -217,5 +217,12 @@
     <string name="batal">Batal</string>
     <string name="hapus_histori">Hapus Histori</string>
     <string name="action_switch_layout">Ubah Layout</string>
+    <string name="_10_makanan_rendah_kalori">Berikut ini daftar 10 makanan rendah kalori yang cocok untuk diet</string>
+    <string name="koneksi_error">Koneksi error</string>
 
+
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data makanan otomatis</string>
+    <string name="notif_title">Tahukah kamu berapa kebutuhan kalorimu?</string>
+    <string name="notif_text">Ayo cek kebutuhan kalori harian sekarang..</string>
 </resources>
