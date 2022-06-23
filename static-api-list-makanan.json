@@ -1,0 +1,52 @@
+[
+  {
+    "nama": "Nasi Merah", 
+    "deskripsi": "Pilihan sumber karbohidrat ini memang sudah populer akan kandungan gizinya yang lebih sehat dibanding nasi putih. Melansir Fat Secret, dalam 100 gram nasi merah terdapat kalorinya sekitar 110 kkal dengan 1,8 gram serat. Rendah kalori dan tinggi serat, nasi merah memang pas untuk dijadikan makanan pokok saat hendak menurunkan berat badan.",
+    "imageId": "nasimerah"
+  },
+  {
+    "nama": "Quinoa", 
+    "deskripsi": "Biji dari tanaman Chenopodium quinoa ini bisa jadi pilihan sumber karbohidrat yang sehat. Quinoa bebas dari gluten, juga diperkaya serat dan protein. Dalam 100 gram quinoa matang, kalorinya hanya sekitar 120 kkal dengan 2,8 gram serat dan 4 gram protein. Cara memakannya sendiri sama dengan nasi. Kamu bisa menyajikan quinoa bersama lauk favoritmu.", 
+    "imageId": "quinoa"
+  },
+  {
+    "nama": "Kentang", 
+    "deskripsi": "Bila bosan dengan biji-bijian sebagai sumber karbohidrat, kentang dapat kamu pilih sebagai menu makanmu yang rendah kalori. Kalori pada 100 gram kentang rebus adalah sekitar 87 kkal. Selain karbohidrat, kentang juga kaya akan potasium yang dapat membantu menjaga kesehatan jantung.", 
+    "imageId": "kentang"
+  },
+  {
+    "nama": "Putih Telur", 
+    "deskripsi": "Putih telur sudah terkenal memiliki protein yang tinggi dan banyak dikonsumsi oleh orang-orang yang melakukan body-building. Dari 1 butir telur, bagian putihnya dapat mengandung hingga 4 gram protein. Sementara itu, kalorinya pun hanya sekitar 18 kkal dan bebas dari lemak maupun kolesterol.", 
+    "imageId": "putihtelur"
+  },
+  {
+    "nama": "Ikan Berdaging Putih", 
+    "deskripsi": "Ikan berdaging putih memiliki kalori yang relatif lebih rendah dibanding ikan seperti salmon, tuna, atau yang berdaging gelap lainnya. Melansir Healthline, 100 gram daging ikan putih yang matang hanya memiliki 85 - 130 kalori dengan 25 - 30 gram protein. Beberapa jenis ikan berdaging putih yang bisa kamu beli yakni ikan cod, ikan gindara, dan ikan dori.", 
+    "imageId": "ikan"
+  },
+  {
+    "nama": "Dada Ayam", 
+    "deskripsi": "Dibandingkan dengan bagian ayam lain, potongan dada ayam mengandung kalori dan lemak yang paling sedikit. Pada 100 gram dada ayam, terdapat sekitar 195 kalori dengan sekitar 7,72 gram lemak. Seperti halnya putih telur, dada ayam tanpa kulit juga kerap digunakan sebagai nutrisi untuk membentuk otot, karena mengandung hingga 29,55 gram protein.", 
+    "imageId": "dadaayam"
+  },
+  {
+    "nama": "Bayam", 
+    "deskripsi": "Bayam adalah salah satu sayuran dengan jumlah kalori yang sangat rendah. Seikat bayam diperkirakan hanya memiliki 78 kalori dengan serat yang tinggi hingga 7 gram. Tak hanya itu, seikat bayam juga memiliki protein sekitar 9 gram. Jadi tak heran bila Popeye si Pelaut sangat suka mengonsumsi bayam agar jadi lebih kuat.", 
+    "imageId": "bayam"
+  },
+  {
+    "nama": "Wortel", 
+    "deskripsi": "Sayuran renyah berwarna jingga ini hanya mengandung 41 kalori dalam porsi 100 gram. Wortel kaya akan beta karoten. Zat tersebut akan diolah tubuh menjadi vitamin A yang bermanfaat untuk menjaga kesehatan mata. Serat larut yang terkandung di dalamnya juga dapat membantu mengangkut lemak jahat dari tubuhmu, sehingga kadar kolesterol dapat menurun.", 
+    "imageId": "wortel"
+  },
+  {
+    "nama": "Stroberi", 
+    "deskripsi": "Merah dan segar, stroberi adalah buah kaya manfaat yang rendah kalori. Dalam porsi 100 gram stroberi, jumlah kalorinya hanya sekitar 30 kkal dengan 2 gram serat. Stroberi pun kaya akan antioksidan dan vitamin C yang dapat melindungi daya tahan tubuh. Terdapat juga kandungan asam folat (vitamin B9) yang mendukung proses pembentukan sel darah merah.", 
+    "imageId": "stroberi"
+  },
+  {
+    "nama": "Pepaya", 
+    "deskripsi": "Buah dengan nama latin Carica papaya ini mengandung 39 kalori dalam porsi 100 gram. Pepaya juga memiliki kandungan antioksidan dan anti-inflamasi. Enzim papain dalam buah dengan daging berwarna jingga kemerahan ini mempermudah pengolahan protein dalam tubuh, sehingga pencernaan pun menjadi lancar.", 
+    "imageId": "pepaya"
+  }
+]
