@@ -45,7 +45,7 @@ class RekomendasiViewModel: ViewModel() {
 
     fun scheduleUpdater(app: Application) {
         val request = OneTimeWorkRequestBuilder<UpdateWorker>()
-            .setInitialDelay(1, TimeUnit.MINUTES)
+            .setInitialDelay(2, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(app).enqueueUniqueWork(
             MainActivity.CHANNEL_ID,

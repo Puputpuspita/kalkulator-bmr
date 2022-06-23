@@ -412,14 +412,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:visibility="invisible"
             android:text="@string/lihat_selengkapnya"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewFoodCat8"
-            tools:visibility="visible"/>
+            tools:visibility="visible" />
 
         <View
             android:id="@+id/divider3"
