@@ -222,9 +222,9 @@
 
 
     <string name="channel_name">Updater</string>
-    <string name="channel_desc">Update data makanan otomatis</string>
-    <string name="notif_title">Tahukah kamu berapa kebutuhan kalorimu?</string>
-    <string name="notif_text">Ayo cek sekarang dan lihat besar kalori makananmu..</string>
+    <string name="channel_description">Update data makanan otomatis</string>
+    <string name="notification_title">Tahukah kamu berapa kebutuhan kalorimu?</string>
+    <string name="notification_text">Ayo cek sekarang dan lihat besar kalori makananmu..</string>
 
     <string name="makanan_rendah_kalori">Makanan Rendah Kalori</string>
 </resources>

@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             val name = getString(R.string.channel_name)
             val importance = NotificationManager.IMPORTANCE_DEFAULT
             val channel = NotificationChannel(CHANNEL_ID, name, importance)
-            channel.description = getString(R.string.channel_desc)
+            channel.description = getString(R.string.channel_description)
             val manager = getSystemService(Context.NOTIFICATION_SERVICE)
                     as NotificationManager
             manager.createNotificationChannel(channel)

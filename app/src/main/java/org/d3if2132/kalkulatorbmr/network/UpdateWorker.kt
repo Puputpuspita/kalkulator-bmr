@@ -22,9 +22,9 @@ class UpdateWorker(context: Context, workerParams: WorkerParameters) : Worker(co
             MainActivity.CHANNEL_ID)
             .setSmallIcon(R.mipmap.ic_launcher_round)
             .setContentTitle(applicationContext.getString(
-                R.string.notif_title))
+                R.string.notification_title))
             .setContentText(applicationContext.getString(
-                R.string.notif_text))
+                R.string.notification_text))
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
